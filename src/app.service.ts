@@ -20,7 +20,7 @@ export class AppService {
   }
 
   getIndex(): string {
-    return 'Welcome to Ask Hilti Nest.js';
+    return 'Welcome to nestjs-twitter-webpush';
   }
 
   /**
@@ -79,6 +79,7 @@ export class AppService {
       stream.on('data', tweet => {
         if (tweet && tweet.user) {
           this.subscriptions.forEach(subscription => {
+            // See https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API for more info
             this.sendNotification(subscription, JSON.stringify({
               notification: {
                 title: tweet.user.name,
