@@ -1,7 +1,8 @@
-# Nestjs-twitter-webpush
+# nestjs-twitter-webpush
 
 This is a server-side application for PWA push notification subscription using Twitters push api.
 
+Twitter has [deprecated](https://twittercommunity.com/t/announcing-the-deprecation-of-v1-1-statuses-filter-endpoint/182960) the v1.1 `statuses/filter` endpoint as of March 9, 2023 and therefore I have archived this repository.
 
 ## Initial Setup
 
